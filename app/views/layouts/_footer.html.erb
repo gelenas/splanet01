@@ -1,13 +1,23 @@
+
 <footer class="footer">
-  <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
-  </small>
   <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-    </ul>
-  </nav>
+    <div class="container">
+    <br>
+    <hr>
+      <div class="row">
+        <div class="col-md-2 col-lg-3">
+           <p>&copy; <a href="http://www.salsamundi.com">Salsa Mundi</a> </p>
+        </div>
+        <div class="col-md-2 col-lg-3">
+          <%= link_to "About",   about_path %>
+        </div>
+        <div class="col-md-2 col-lg-3">
+          <%= link_to "Contact", contact_path %>
+        </div>
+        <div class="col-md-2 col-lg-3">
+          <a href="http://www.salsamundi.com">News</a>
+        </div>
+      </div>
+    </div>
+  </nav>  
 </footer>
