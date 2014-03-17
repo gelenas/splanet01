@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
-SplAppPg::Application.initialize!
+Splanet01::Application.initialize!

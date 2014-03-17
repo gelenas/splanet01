@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SplAppPg::Application.load_tasks
+Splanet01::Application.load_tasks

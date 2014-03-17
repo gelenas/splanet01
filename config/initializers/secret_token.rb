@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-SplAppPg::Application.config.secret_key_base = secure_token
+Splanet01::Application.config.secret_key_base = secure_token
