@@ -1,19 +1,22 @@
 <div class="jumbotron">
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<h3>Sign up</h3>
 <div class="row">
   <div class="col-xs-6 col-md-4">
     <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
+        <div class="col-xs-6 col-md-4 row">
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+          <%= f.label :email %>
+          <%= f.text_field :email %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
-      <br>
+<br/>
+<br/>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
-<br>
-      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+          <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+       
+        </div>
     <% end %>
   </div>
 </div>

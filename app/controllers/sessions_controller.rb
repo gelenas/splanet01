@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
 	def new
-		flash[:notice] = 'Welcome!'
-    flash[:alert] = 'My birthday is soon.'
-    flash[:notice] = 'Welcome!'
+
 	end
 
 	def create
@@ -22,6 +20,6 @@ class SessionsController < ApplicationController
         sign_out
          flash.now[:alert] = 'you have signed out'
     redirect_to root_url
-    flash[:alert] = 'My birthday is soon.'
+  
 	end
 end
