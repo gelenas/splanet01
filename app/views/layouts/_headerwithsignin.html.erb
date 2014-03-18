@@ -15,8 +15,18 @@
                 </li>
 	             
 	              <% else %>
- <li><%= link_to "Sign in", signin_path %></li>
- <li><%= link_to "Sign up", signup_path %></li>
+
+ <div class="navbar-form navbar-right">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.text_field :email , placeholder: 'Email'%>
+
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    <% end %>
+ 
+   </div>
+<li><%= link_to "Sign up", signup_path %></li>
+
 	               <% end %>
 	            </ul>
           </nav>

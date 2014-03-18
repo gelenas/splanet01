@@ -6,10 +6,11 @@
     <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
         <div class="col-xs-6 col-md-4 row">
-          <%= f.label :name %>
-          <%= f.text_field :name %>
-          <%= f.label :email %>
-          <%= f.text_field :email %>
+          <%= f.text_field :name, placeholder: 'Name'%>
+          
+<br/>
+<br/>
+          <%= f.text_field :email, placeholder: 'Email' %>
 
 <br/>
 <br/>

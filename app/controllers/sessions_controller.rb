@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       sign_in user
       redirect_to user
     else
-       flash.now[:error] = 'Invalid email' # Not quite right!
+      flash.now[:error] = 'Invalid email' 
       render 'new'
 
     end
@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
 	def destroy
         sign_out
-         flash.now[:alert] = 'you have signed out'
+       flash[:success] = "You have signed out" 
     redirect_to root_url
   
 	end
